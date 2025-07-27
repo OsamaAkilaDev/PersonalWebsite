@@ -1,3 +1,4 @@
+import TargetCursor from "./components/TargetCursor";
 import "./globals.css";
 import { workSans } from "./utils/fonts";
 export const metadata = {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${workSans.className} antialiased outline-none focus:ring-0`}
       >
+        <TargetCursor spinDuration={2} hideDefaultCursor={true} />
         {children}
       </body>
     </html>

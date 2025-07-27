@@ -8,11 +8,11 @@ function IntroductionSection() {
     <div className="w-full min-h-screen flex items-center justify-between md:p-20 max-md:p-8 max-md:items-start max-md:flex-col gap-8">
       <IntroductionCard />
 
-      <div className="max-md:hidden">
+      <div className="max-md:hidden cursor-target">
         <TiltedCardSnippet size="300px" />
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden cursor-target">
         <TiltedCardSnippet size="250px" />
       </div>
 

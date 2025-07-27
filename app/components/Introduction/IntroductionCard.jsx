@@ -14,12 +14,12 @@ function IntroductionCard() {
         software developer with experience in{" "}
         <span className="text-blue-500 font-bold">Frontend</span>,{" "}
         <span className="text-blue-500 font-bold">Backend</span>, and{" "}
-        <span className="text-blue-500 font-bold">AI</span>. I build full-stack
-        applications that combine clean UI, robust architecture, and intelligent
-        features to deliver real-world impact.
+        <span className="text-blue-500 font-bold">AI</span>.<br />I build
+        full-stack applications that combine clean UI, robust architecture, and
+        intelligent features to deliver real-world impact.
       </p>
 
-      <button className="bg-blue-500 py-3.5 text-xl font-medium tracking-wide rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-pointer w-40">
+      <button className="bg-blue-500 py-3.5 text-xl font-medium tracking-wide rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target w-40 cursor-none">
         Resume
       </button>
     </div>
