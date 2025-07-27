@@ -1,7 +1,6 @@
 import React from "react";
 
 function SkillCategory({ skillCategory }) {
-  console.log(skillCategory.skills);
   return (
     <div className="flex justify-between gap-15 max-md:gap-5 max-md:flex-col">
       <h2 className="text-5xl flex-1">{skillCategory.title}</h2>

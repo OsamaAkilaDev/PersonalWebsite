@@ -1,6 +1,5 @@
 import "./globals.css";
 import { workSans } from "./utils/fonts";
-
 export const metadata = {
   title: "Osama Akila",
   description: "Osama Akila's personal website and portfolio.",
