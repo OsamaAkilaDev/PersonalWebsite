@@ -5,7 +5,10 @@ import Quote from "../Introduction/Quote";
 
 function IntroductionSection() {
   return (
-    <div className="w-full min-h-screen flex items-center justify-between md:p-20 max-md:p-8 max-md:items-start max-md:flex-col gap-8">
+    <div
+      id="intro"
+      className="relative w-full min-h-screen flex items-center justify-between md:p-20 max-md:p-8 max-md:items-start max-md:flex-col gap-8"
+    >
       <IntroductionCard />
 
       <div className="max-md:hidden cursor-target">

@@ -19,7 +19,7 @@ function IntroductionCard() {
         intelligent features to deliver real-world impact.
       </p>
 
-      <button className="bg-blue-500 py-3.5 text-xl font-medium tracking-wide rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target w-40 cursor-none">
+      <button className="bg-blue-500 py-3.5 text-xl font-medium tracking-wide rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target cursor-none w-40">
         Resume
       </button>
     </div>

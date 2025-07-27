@@ -5,6 +5,8 @@ import ExperienceSection from "./components/Sections/ExperienceSection";
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import TargetCursor from "./components/TargetCursor";
+import ProjectsSection from "./components/Sections/ProjectsSection";
+import NavMenu from "./components/NavMenu";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -27,15 +29,19 @@ export default function Home() {
     }
     requestAnimationFrame(raf);
   }, []);
+
   return (
-    <main className={`w-full flex flex-col`}>
+    <main className={`w-full flex flex-col relative`}>
       {isMobile ? null : (
         <TargetCursor spinDuration={2} hideDefaultCursor={true} />
       )}
 
+      <NavMenu />
+
       <IntroductionSection />
       <SkillsSection />
       <ExperienceSection />
+      <ProjectsSection />
     </main>
   );
 }

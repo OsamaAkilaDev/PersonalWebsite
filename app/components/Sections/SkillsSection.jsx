@@ -4,7 +4,7 @@ import { skillCategories } from "@/app/utils/skills";
 
 function SkillsSection() {
   return (
-    <div className="w-full min-h-screen md:p-18 max-md:p-8">
+    <div id="skills" className="w-full min-h-screen md:p-18 max-md:p-8">
       <h1 className="text-4xl font-medium mb-12 text-blue-500">My Stack</h1>
 
       <div className="flex flex-col gap-10">

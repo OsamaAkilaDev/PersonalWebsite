@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 html {
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 :root {
-  --background: #0a0a0a;
+  --background: #151312;
   --foreground: #ededed;
 }
 
@@ -15,4 +16,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+}
+
+.glassmorphisim {
+  background: rgba(255, 250, 250, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
 }
