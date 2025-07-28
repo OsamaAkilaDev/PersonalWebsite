@@ -6,6 +6,7 @@ function ProjectCard({ project }) {
     <div className=" bg-[#1f1c1b] shadow-xl rounded-xl cursor-target flex flex-col">
       <div className="h-45 w-full rounded-t-xl">
         <Image
+          alt={project.title}
           className="w-full h-full object-fill rounded-[inherit]"
           width={400}
           height={180}
