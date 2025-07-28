@@ -1,21 +1,8 @@
-import Link from "next/link";
-import React from "react";
-import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
-gsap.registerPlugin(ScrollToPlugin);
-
-const scrollToElement = (target) => {
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: { y: target },
-    ease: "power2.inOut",
-  });
-};
+import NavLink from "./NavLink";
 
 function NavMenu() {
   return (
-    <div className="fixed bg-[#1f1c1b] rounded-xl h-12 z-10 top-4 left-1/2 -translate-x-1/2 flex gap-3 items-center p-2 ">
+    <div className="fixed bg-[#1f1c1b] rounded-xl h-12 z-10 top-4 left-1/2 -translate-x-1/2 gap-3 items-center p-2 shadow-2xl md:flex hidden">
       <NavLink title="About" href="#intro">
         <svg
           width="100%"
@@ -88,20 +75,6 @@ function NavMenu() {
         </svg>
       </NavLink>
     </div>
-  );
-}
-
-function NavLink({ title, href, children }) {
-  return (
-    <button
-      className="px-8 rounded-lg h-full shadow-2xl flex items-center justify-center cursor-target cursor-none gap-3"
-      onClick={() => scrollToElement(href)}
-      // href={href}
-      // scroll={true}
-    >
-      <div className="h-6 w-6 flex items-center justify-center">{children}</div>
-      <p>{title}</p>
-    </button>
   );
 }
 

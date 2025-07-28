@@ -17,7 +17,9 @@ function ExperienceSection() {
 
   return (
     <div id="exp" className="w-full min-h-screen md:p-18 max-md:p-8">
-      <h1 className="text-4xl font-medium mb-12 text-blue-500">Experience</h1>
+      <h1 className="text-4xl font-medium md:mb-12 mb-5 text-blue-500">
+        Experience
+      </h1>
       <div className="flex flex-col gap-12">
         {experiences.map((exp, i) => {
           return <ExperienceCard experienceInfo={exp} key={i} />;

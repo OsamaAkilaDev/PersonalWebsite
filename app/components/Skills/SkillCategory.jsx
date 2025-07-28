@@ -2,7 +2,7 @@ import React from "react";
 
 function SkillCategory({ skillCategory }) {
   return (
-    <div className="flex justify-between gap-15 max-md:gap-5 max-md:flex-col">
+    <div className="flex justify-between gap-15 max-md:gap-1 max-md:flex-col">
       <h2 className="text-5xl flex-1 max-md:text-4xl">{skillCategory.title}</h2>
       <div className="flex gap-x-10 gap-y-4 max-md:gap-x-6 max-md:gap-y-3 flex-wrap mt-2 justify-start flex-3">
         {skillCategory.skills.map((skill, i) => {

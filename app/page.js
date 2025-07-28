@@ -7,6 +7,7 @@ import Lenis from "lenis";
 import TargetCursor from "./components/TargetCursor";
 import ProjectsSection from "./components/Sections/ProjectsSection";
 import NavMenu from "./components/NavMenu";
+import MobileNavMenu from "./components/MobileNavMenu";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
       )}
 
       <NavMenu />
+      <MobileNavMenu />
 
       <IntroductionSection />
       <SkillsSection />
