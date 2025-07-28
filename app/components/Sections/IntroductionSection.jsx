@@ -11,11 +11,11 @@ function IntroductionSection() {
     >
       <IntroductionCard />
 
-      <div className="max-md:hidden cursor-target">
+      <div className="max-md:hidden cursor-target fadeIn">
         <TiltedCardSnippet size="300px" />
       </div>
 
-      <div className="md:hidden cursor-target">
+      <div className="md:hidden cursor-target fadeIn">
         <TiltedCardSnippet size="250px" />
       </div>
 

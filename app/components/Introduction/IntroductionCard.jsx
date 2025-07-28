@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 function IntroductionCard() {
   return (
-    <div className="gap-7 flex flex-col">
+    <div className="gap-7 flex flex-col fadeIn">
       <h1
-        className={`text-7xl max-md:text-5xl max-w-85  font-bold text-justify tracking-wider`}
+        className={`text-7xl max-md:text-5xl max-w-85 font-bold text-justify tracking-wider`}
       >
         <span className="text-blue-500">Software</span> Engineer
       </h1>
@@ -19,9 +20,23 @@ function IntroductionCard() {
         intelligent features to deliver real-world impact.
       </p>
 
-      <button className="bg-blue-500 py-3.5 text-xl font-medium tracking-wide rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target cursor-none w-40">
-        Resume
-      </button>
+      <div className="flex gap-3">
+        <Link
+          href="https://www.linkedin.com/in/osama-akila-9a847a268/"
+          target="_blank"
+          className="bg-blue-500 h-12 text-xl font-ligth tracking-wide rounded-md hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target md:cursor-none flex justify-center items-center px-5"
+        >
+          LinkedIn
+        </Link>
+
+        <Link
+          href="https://github.com/OsamaAkilaDev"
+          target="_blank"
+          className="bg-blue-500 h-12 text-xl font-ligth tracking-wide rounded-md hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target md:cursor-none flex justify-center items-center px-5"
+        >
+          GitHub
+        </Link>
+      </div>
     </div>
   );
 }
