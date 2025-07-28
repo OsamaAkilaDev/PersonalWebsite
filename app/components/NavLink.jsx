@@ -18,7 +18,9 @@ function NavLink({ title, href, children, afterEffect }) {
       className="md:px-8 rounded-lg flex items-center max-md:w-50 justify-center cursor-target md:cursor-none gap-3 max-md:justify-start max-md:h-10"
       onClick={() => {
         scrollToElement(href);
-        () => afterEffect();
+        if (afterEffect) {
+          afterEffect();
+        }
       }}
     >
       <div className="h-6 w-6 flex items-center justify-center">{children}</div>

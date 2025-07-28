@@ -503,7 +503,13 @@ export const skillCategories = [
       },
       {
         logo: (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            height="100%"
+            version="1.1"
+            viewBox="0 0 128 128"
+          >
             <path
               fill="#fff"
               d="M63.975 125.09c-16.317 0-31.658-6.355-43.197-17.893S2.885 80.318 2.885 64 9.24 32.341 20.778 20.803 47.657 2.91 63.975 2.91s31.659 6.355 43.198 17.893S125.065 47.682 125.065 64s-6.355 31.659-17.893 43.198-26.879 17.892-43.197 17.892z"
@@ -644,7 +650,9 @@ export const skillCategories = [
         logo: (
           <svg
             viewBox="0 0 32 32"
-            fill="none"
+            width="100%"
+            height="100%"
+            version="1.1"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -674,6 +682,8 @@ export const skillCategories = [
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             fill="#000000"
+            width="100%"
+            height="100%"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
@@ -712,7 +722,9 @@ export const skillCategories = [
           <svg
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            width="100%"
+            height="100%"
+            version="1.1"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
@@ -762,6 +774,8 @@ export const skillCategories = [
         logo: (
           <svg
             viewBox="0 0 256 256"
+            width="100%"
+            height="100%"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
