@@ -7,7 +7,7 @@ function IntroductionSection() {
   return (
     <div
       id="intro"
-      className="relative w-full min-h-screen flex items-center justify-between md:p-20 max-md:p-8 max-md:items-start max-md:flex-col gap-8"
+      className="relative w-full md:min-h-screen flex items-center justify-between md:p-20 max-md:p-8 max-md:items-start max-md:flex-col gap-8"
     >
       <IntroductionCard />
 
