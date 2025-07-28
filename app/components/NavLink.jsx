@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import React from "react";
 
-function NavLink({ title, href, children }) {
+function NavLink({ title, href, children, afterEffect }) {
   gsap.registerPlugin(ScrollToPlugin);
 
   const scrollToElement = (target) => {
@@ -16,7 +16,10 @@ function NavLink({ title, href, children }) {
   return (
     <button
       className="md:px-8 rounded-lg flex items-center max-md:w-50 justify-center cursor-target gap-3 max-md:justify-start max-md:h-10"
-      onClick={() => scrollToElement(href)}
+      onClick={() => {
+        scrollToElement(href);
+        afterEffect();
+      }}
     >
       <div className="h-6 w-6 flex items-center justify-center">{children}</div>
       <p>{title}</p>

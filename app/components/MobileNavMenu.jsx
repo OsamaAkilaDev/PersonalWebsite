@@ -35,7 +35,11 @@ function MobileNavMenu() {
 
           <div className="bg-[#1f1c1b] h-full items-center p-5 shadow-2xl flex flex-col justify-between">
             <div className="flex flex-col gap-3">
-              <NavLink title="About" href="#intro">
+              <NavLink
+                title="About"
+                href="#intro"
+                afterEffect={() => setIsNavMenuVisible(false)}
+              >
                 <svg
                   width="100%"
                   height="100%"
@@ -53,7 +57,11 @@ function MobileNavMenu() {
                 </svg>
               </NavLink>
 
-              <NavLink title="Skills" href="#skills">
+              <NavLink
+                title="Skills"
+                href="#skills"
+                afterEffect={() => setIsNavMenuVisible(false)}
+              >
                 <svg
                   width="100%"
                   height="100%"
@@ -71,7 +79,11 @@ function MobileNavMenu() {
                 </svg>
               </NavLink>
 
-              <NavLink title="Experience" href="#exp">
+              <NavLink
+                title="Experience"
+                href="#exp"
+                afterEffect={() => setIsNavMenuVisible(false)}
+              >
                 <svg
                   width="100%"
                   height="100%"
@@ -89,7 +101,11 @@ function MobileNavMenu() {
                 </svg>
               </NavLink>
 
-              <NavLink title="Projects" href="#projects">
+              <NavLink
+                title="Projects"
+                href="#projects"
+                afterEffect={() => setIsNavMenuVisible(false)}
+              >
                 <svg
                   width="100%"
                   height="100%"
