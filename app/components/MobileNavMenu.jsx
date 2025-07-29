@@ -6,6 +6,7 @@ function MobileNavMenu() {
   return (
     <>
       <button
+        aria-label="navigation menu"
         onClick={() => setIsNavMenuVisible(true)}
         className="fixed z-15 top-3 right-3 w-10 h-10 p-2 bg-[#1f1c1b] rounded-lg shadow-2xl md:hidden flex justify-center items-center cursor-pointer"
       >

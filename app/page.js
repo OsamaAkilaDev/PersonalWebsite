@@ -8,6 +8,7 @@ import TargetCursor from "./components/TargetCursor";
 import ProjectsSection from "./components/Sections/ProjectsSection";
 import NavMenu from "./components/NavMenu";
 import MobileNavMenu from "./components/MobileNavMenu";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,6 +34,7 @@ export default function Home() {
 
   return (
     <main className={`w-full flex flex-col relative`}>
+      <Toaster position="bottom-center" reverseOrder={false} />
       {isMobile ? null : (
         <TargetCursor spinDuration={2} hideDefaultCursor={true} />
       )}
