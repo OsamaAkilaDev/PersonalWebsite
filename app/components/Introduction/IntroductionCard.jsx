@@ -35,7 +35,7 @@ function IntroductionCard() {
 
       <div className="flex gap-2 flex-wrap">
         <Link
-          href="https://www.linkedin.com/in/osama-akila-9a847a268/"
+          href="https://www.linkedin.com/in/osama-mahmoud-akila-9a847a268/"
           target="_blank"
           className="bg-blue-500 h-10 text-lg rounded-sm hover:bg-blue-600 active:bg-blue-700 transition-colors cursor-target md:cursor-none flex justify-center items-center px-3 gap-1.5"
         >
